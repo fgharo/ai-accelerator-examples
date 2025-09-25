@@ -23,5 +23,3 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: 3scale
-  syncPolicy:
-    automated: {}

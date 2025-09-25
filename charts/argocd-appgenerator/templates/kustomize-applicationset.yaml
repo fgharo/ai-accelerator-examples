@@ -22,16 +22,6 @@ spec:
         example: {{ include "argocd-appgenerator.fullname" . }}
     spec:
       project: {{ include "argocd-appgenerator.fullname" . }}
-      syncPolicy:
-        automated:
-          prune: false
-          selfHeal: true
-        retry:
-          limit: 5
-          backoff:
-            duration: 30s
-            factor: 2
-            maxDuration: 20m
       source:
         repoURL: {{ .Values.repoURL }}
         targetRevision: {{ .Values.targetRevision }}
