@@ -11,6 +11,6 @@ helmCharts:
     releaseName: minio-release
     namespace: minio
     version: 0.1.4
-    repo: https://redhat-ai-services.github.io/fgharo/
+    repo: https://fgharo.github.io/helm-charts/
     skipTests: true
     valuesFile: values.yaml
